@@ -1,0 +1,447 @@
+/***************************************************** text and image styles *****************************************************/
+.block-header {
+  font-family: "Montserrat", sans-serif;
+  color: #9fa3a7;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: "Arvo", sans-serif;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Arvo", sans-serif;
+  font-size: 32px;
+  line-height: 36px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: "Arvo", sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.block-greytxt {
+  font-family: "Open Sans", sans-serif;
+  color: #9fa3a7;
+  font-size: 14px;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.block-image {
+  align-self: flex-end;
+}
+
+strong {
+  font-size: 16px;
+}
+
+
+/***************************************************** grid layout *****************************************************/
+
+.container-fluid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(200px, auto);
+  grid-template-areas:
+    "block-1 block-1 block-2 block-2"
+    "block-1 block-1 block-2 block-2"
+    "block-3 block-4 block-4 block-5"
+    "block-3 block-4 block-4 block-5"
+    "block-6 block-7 block-7 block-5"
+    "block-6 block-7 block-7 block-5"
+    "block-8 block-9 block-10 block-10";
+}
+
+
+/***************************************************** 1st block *****************************************************/
+
+.block-1 {
+  grid-area: block-1;
+  background-color: #ffffff;
+  padding: 0 50px;
+}
+
+.block-1-txt {
+  width: 33%;
+}
+
+/***************************************************** 2nd block *****************************************************/
+
+.block-2 {
+  grid-area: block-2;
+  background-color: #f7f8f9;
+}
+
+.block-2 h1 {
+  margin: 20px 0 10px;
+  max-width: 550px;
+}
+
+.block-2 a {
+  color: #27b9c2;
+}
+
+/***************************************************** 3rd block *****************************************************/
+
+.block-3 {
+  grid-area: block-3;
+  background-color: #f05638;
+}
+
+.block-3 h3 {
+  max-width: 230px;
+}
+
+.block-3 a {
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffc80a;
+}
+
+/***************************************************** 4th block *****************************************************/
+
+.block-4 {
+  grid-area: block-4;
+  background-color: #ffffff;
+  padding: 0 4%;
+  padding-top: 70px;
+  overflow: hidden;
+}
+
+.block-4-left {
+  max-width: 180px;
+  width: 50%;
+}
+
+.mac-img {
+  position: relative;
+  left: -160%;
+  width: 250%;
+  max-width: none;
+}
+
+.block-4-right {
+  width: 40%;
+}
+
+.block-4-right a {
+  color: #27b9c2;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/***************************************************** 5th block *****************************************************/
+
+.block-5 {
+  grid-area: block-5;
+  background-color: #8f76bc;
+  padding: 30px 5% 70px;
+  overflow: hidden;
+}
+
+.block-5-circle {
+  width: 370px;
+  height: 370px;
+  background-color: #8166b0;
+  border-radius: 50%;
+}
+
+.text-block {
+  border-radius: 60px;
+  background-color: hsla(0, 0%, 100%, 0.08);
+  background-image: url(../imgs/5bc2f42d5a5ed9663e707e7d_Shape.png);
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: 10px;
+  font-size: 10px;
+  line-height: 23px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  padding: 2px 15px 2px 30px;
+}
+
+.block-5 img {
+  margin-top: 20px;
+}
+
+.block-5-txt {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  width: 90%;
+  max-width: 290px;
+  line-height: 26px;
+}
+
+.button {
+  text-decoration: none;
+  margin-top: 30px;
+  padding: 14px 28px;
+  border-radius: 50px;
+  background-color: #ffc80a;
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+/***************************************************** 6th block *****************************************************/
+
+.block-6 {
+  grid-area: block-6;
+  background-color: #f7f8f9;
+}
+
+.block-6 h3 {
+  width: 54%;
+  text-align: center;
+}
+
+.block-6 a {
+  color: #27b9c2;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/***************************************************** 7th block *****************************************************/
+
+.block-7 {
+  grid-area: block-7;
+  background-color: #93b6b7;
+  background-image: url(../imgs/5bc2f42d5a5ed97dab707e7e_UX.png);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 80%;
+  padding-top: 30px;
+}
+
+.best-choice {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color: #fa684f;
+  font-size: 8px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.block-7 h3 {
+  max-width: 280px;
+  padding: 0 25px;
+  margin: auto;
+  font-weight: bold;
+}
+
+.block-7 img {
+  width: 90%;
+  right: 7%;
+}
+
+/***************************************************** 8th block *****************************************************/
+
+.block-8 {
+  grid-area: block-8;
+  background-color: #38d5f4;
+}
+
+.block-8-content {
+  background-color: #35cfed;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  padding: 0 30px;
+}
+
+/***************************************************** 9th block *****************************************************/
+
+.block-9 {
+  grid-area: block-9;
+  background-color: #f7f8f9;
+}
+
+.block-9-header {
+  background-color: #7bc424;
+  color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+  font-size: 8px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.block-9 h3 {
+  width: 70%;
+}
+
+/***************************************************** 10th block *****************************************************/
+
+.block-10 {
+  grid-area: block-10;
+  background-color: #2c2c2c;
+  padding: 0 30px;
+}
+
+.block-10 h3 {
+  width: 35%;
+}
+
+.block-10 img {
+  right: 15%;
+}
+
+/***************************************************** medium media *****************************************************/
+
+@media screen and (max-width: 992px) {
+  .container-fluid {
+    grid-template-areas:
+      "block-2 block-2 block-2 block-2"
+      "block-1 block-1 block-1 block-1"
+      "block-3 block-3 block-6 block-6"
+      "block-4 block-4 block-4 block-4"
+      "block-8 block-8 block-5 block-5"
+      "block-7 block-7 block-5 block-5"
+      "block-9 block-9 block-9 block-9"
+      "block-10 block-10 block-10 block-10";
+  }
+
+  .block-2 {
+    padding: 50px 0;
+  }
+
+  .block-2 h1 {
+    font-size: 35px;
+    line-height: 1.4em;
+  }
+
+  .block-1 {
+    padding-top: 30px;
+  }
+
+  .block-3 {
+    padding: 40px 0;
+  }
+
+  .block-10 h3 {
+    width: 32%;
+  }
+}
+
+/***************************************************** small media *****************************************************/
+
+@media screen and (max-width: 480px) {
+  .container-fluid {
+    grid-template-areas:
+      "block-2 block-2 block-2 block-2"
+      "block-1 block-1 block-1 block-1"
+      "block-3 block-3 block-3 block-3"
+      "block-6 block-6 block-6 block-6"
+      "block-4 block-4 block-4 block-4"
+      "block-8 block-8 block-8 block-8"
+      "block-7 block-7 block-7 block-7"
+      "block-5 block-5 block-5 block-5"
+      "block-9 block-9 block-9 block-9"
+      "block-10 block-10 block-10 block-10";
+  }
+
+  .block-2 h1 {
+    font-size: 10vw;
+  }
+
+  .block-1 {
+    flex-direction: column;
+  }
+
+  .block-1-txt {
+    width: 90%;
+  }
+
+  .block-1 img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    right: 40px;
+  }
+
+  .block-6 {
+    padding: 30px 0;
+  }
+
+  .block-4 {
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .block-4-left {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 40px;
+  }
+
+  .block-4-left img {
+    width: 200%;
+    margin-top: 20px;
+    left: -115%;
+  }
+
+  .block-4-right {
+    width: 100%;
+  }
+
+  .block-7 {
+    padding-top: 65px;
+  }
+
+  .block-10 {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  .block-10 h3 {
+    width: 100%;
+    text-align: center;
+    margin-top: -20px;
+  }
+}
